@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # make sure you run this as sudo.
-
-apt-get install ruby-dev python-dev python-rpi.gpio
+apt-get update
+apt-get --yes install ruby-dev python-dev python-rpi.gpio
 gem install wiringpi
 cp bin/set_gpio_pins.sh /usr/local/bin
 chmod 755 /usr/local/bin/set_gpio_pins.sh
@@ -12,7 +12,7 @@ chmod 755 /usr/local/bin/set_gpio_pins.sh
 echo "export PATH=\$PATH:\$HOME/bin" >> .bashrc
 
 cd /usr/local/src
-git clone git://git.drogon/net/WiringPi
+git clone git://git.drogon.net/WiringPi
 cd WiringPi
 ./build
 cd /home/pi
