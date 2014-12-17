@@ -21,7 +21,7 @@ gpio = WiringPi::GPIO.new
 # now tell GPIO 0 to use some HIGH VOLTAGE!  Well, not
 # that high, just 3.3 Volts.
 
-gpio.write(LED_PIN, HIGH)
+#gpio.write(LED_PIN, HIGH)
 
 
 # Ok, let's see what we can do!  Can you remember how we
