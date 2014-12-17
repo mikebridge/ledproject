@@ -22,3 +22,5 @@ cd /home/pi
 mv -f /home/pi/python_games ~root
 mv -f /home/pi/Desktop/python-games.desktop ~root
 
+/usr/local/bin/set_gpio_pins.sh
+
