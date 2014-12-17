@@ -10,10 +10,12 @@ chmod 755 /usr/local/bin/set_gpio_pins.sh
 (sudo crontab -l -u root 2>/dev/null; echo "@reboot /usr/local/bin/set_gpio_pins.sh") | sudo crontab -
 
 echo "export PATH=\$PATH:\$HOME/bin" >> .bashrc
+mkdir /home/pi/bin
+chown pi /home/pi/bin
 
 cd /usr/local/src
-git clone git://git.drogon.net/WiringPi
-cd WiringPi
+git clone git://git.drogon.net/wiringPi
+cd wiringPi
 ./build
 cd /home/pi
 
